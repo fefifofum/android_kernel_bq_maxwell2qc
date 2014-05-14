@@ -938,8 +938,8 @@ static struct sensor_platform_data akm8963_info =
 		},
 	#elif defined(CONFIG_MALATA_D1004) && defined(CONFIG_MALATA_D7022)
 		{
-			{1, 0, 0},
-			{0, 1, 0},
+			{-1, 0, 0},
+			{0, -1, 0},
 			{0, 0, 1},
 		},
 	#else
@@ -968,8 +968,8 @@ static struct sensor_platform_data akm8963_info =
 		},
 	#elif defined(CONFIG_MALATA_D1004) && defined(CONFIG_MALATA_D7022)
 		{
+			{0, -1, 0},
 			{1, 0, 0},
-			{0, 1, 0},
 			{0, 0, -1},
 		},
 	#else
