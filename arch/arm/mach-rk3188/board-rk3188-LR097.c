@@ -113,7 +113,11 @@
 #include <linux/mpu.h>
 #endif
 
+#if defined(CONFIG_MALATA_D1004) && defined(CONFIG_MALATA_D7022)
+#include "board-rk3188-maxwell2qc-camera.c"
+#else
 #include "../mach-rk30/board-rk3168-LR097-camera.c"
+#endif
 
 #if defined(CONFIG_TOUCHSCREEN_GT8XX)
 #define TOUCH_RESET_PIN  RK30_PIN0_PB6
