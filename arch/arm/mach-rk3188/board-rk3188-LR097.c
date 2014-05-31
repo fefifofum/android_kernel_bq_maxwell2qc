@@ -3134,8 +3134,8 @@ static struct pmu_info  act8846_dcdc_info[] = {
 	{
 		.name          = "act_dcdc4",   //vccio
 		#ifdef CONFIG_MALATA_D7022
-		.min_uv          = 3150000,
-		.max_uv         = 3150000,
+		.min_uv          = 3200000,
+		.max_uv         = 3200000,
 		#else
 		.min_uv          = 3000000,
 		.max_uv         = 3000000,
