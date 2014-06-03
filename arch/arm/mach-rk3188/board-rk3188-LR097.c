@@ -751,7 +751,7 @@ static struct sensor_platform_data lis3de_info = {
 	.orientation = {0, 1, 0, 1, 0, 0, 0, 0, -1},
 	#elif defined(CONFIG_MALATA_D7022)
 	//.orientation = {1, 0, 0, 0, -1, 0, 0, 0, -1},//land
-	.orientation = {0, 1, 0, 1, 0, 0, 0, 0, -1},//Portrait
+	.orientation = {0, -1, 0, -1, 0, 0, 0, 0, -1},//Portrait
 	#else
 	.orientation = {0, -1, 0, -1, 0, 0, 0, 0, -1},
 	#endif
